@@ -1,0 +1,112 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-wrap {
+    display: block; }
+    .header {
+      height: 700px;
+      padding-top: 20px;
+      text-align: center;}
+      .header__wrapper{
+        max-width: 767px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 150px;
+        box-sizing: border-box;
+        padding-left: 40px;}
+    .header__title {
+      display: inline-block; }
+      .header__title--float{
+        float: left;
+        margin-top:12px;
+        margin-right: 300px;
+      }
+    .header__title--big {
+      margin: 0;
+      margin-top: 160px;
+      font-size: 50px; }
+  .header__button--red {
+    width: 230px; }
+  .wrapper__title {
+    margin-bottom: 35px; }
+  .slide__wrapper {
+    max-width: 752px;
+    margin: 0 auto; }
+  .slide__hider {
+    width: 236px;
+    height: 400px;
+    margin-right: 12px;
+    display: inline-block; }
+  .slide {
+    width: 236px;
+    height: 400px; }
+  .slide__text {
+    margin-top: 200px;
+    width: 205px; }
+  .slide__descr .wrap {
+    display: inline; }
+  .slide__controls {
+    top: 40px; }
+  .slide__control--right {
+    margin-left: 130px; }
+  .face__wrapper {
+    margin: 0 auto;
+    width: 490px; }
+  .face {
+    display: inline-block;
+    width: 49%;
+    text-align: right; }
+  .face__button {
+    margin-top: 40px; }
+  .grid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 752px; }
+  .grid-item {
+    width: 235px;
+    height: 311px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-bottom: 10px; }
+  .grid-item--2 {
+    width: 480px; }
+  .ideas__text {
+    margin-top: 35px; }
+  .ideas {
+    max-width: 420px;
+    margin: 0 auto; }
+  .ideas__input {
+    width: 235px; }
+  .ideas__button {
+    width: 155px; }
+  .ideas__input, .ideas__button {
+    display: inline-block; }
+  .footer {
+    margin-top: 100px;
+    height: 120px;
+    padding: 40px; }
+  .footer__title {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    margin-right: 90px; }
+  .footer .title--black {
+    margin-top: 0;
+    clear: right; }
+  .footer__title--gray {
+    margin-right: 80px;
+    float: right; }
+  .menu__item {
+    display: block; }
+  .footer__menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 220px; }
+  .footer__link {
+    position: absolute;
+    top: 30px;
+    left: 500px; }
+  .footer__wrapper {
+    max-width: 690px;
+    margin: 0 auto;
+    position: relative; } }

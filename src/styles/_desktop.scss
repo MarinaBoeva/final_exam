@@ -1,0 +1,120 @@
+@media (min-width:1024px){
+  .wrapper{
+    max-width: 940px;
+  }
+  .header {
+    height: 700px;
+    text-align: center;}
+  .header__wrapper{
+    max-width: 767px;
+    margin: 0 auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+    }
+  .header__title {
+    display: inline-block;
+  }
+  .header__title--float{
+    float: left;
+    margin-top:12px;
+    margin-right: 300px;
+    }
+  .header__title--big {
+    margin: 0;
+    margin-top: 130px;
+    font-size: 50px;
+  }
+  .header__text{
+    font-size: 25px;
+    margin: 30px 0;
+  }
+  .header__button--red{
+    width: 231px;
+  }
+  .slide__hider{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+  }
+  .slide{
+    width: 300px;
+    height: 400px;
+  }
+  .slide__text {
+    margin-top: 200px;
+    width: 205px; }
+  .slide__descr .wrap {
+    display: inline; }
+  .slide__controls {
+    top: 40px; }
+  .slide__control--right {
+    margin-left: 190px; }
+  .face__wrapper{
+    margin-top: 15px;
+  }
+  .face{
+    vertical-align: text-top;
+    display: inline-block;
+    width: 24.5%;
+  }
+  .face__button{
+    width: 230px;
+    margin-top: 40px;
+  }
+  .grid-item{
+    margin:0;
+    margin-bottom: 10px;
+    height: 311px;
+    width: 300px;
+  }
+  .grid-item--2{
+    height: 311px;
+    width: 610px;
+  }
+  .ideas__text {
+    margin-top: 35px; }
+  .ideas {
+    max-width: 420px;
+    margin: 0 auto;
+   }
+  .ideas__input {
+    width: 235px;
+  }
+  .ideas__button {
+    width: 155px;
+  }
+  .ideas__input, .ideas__button {
+    display: inline-block;
+  }
+  .footer {
+    margin-top: 100px;
+    height: 120px;
+    padding: 40px; }
+  .footer__title {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    margin-right: 90px; }
+  .footer .title--black {
+    margin-top: 0;
+    clear: right; }
+  .footer__title--gray {
+    margin-right: 80px;
+    float: right; }
+  .menu__item {
+    display: block; }
+  .footer__menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 220px; }
+  .footer__link {
+    position: absolute;
+    top: 30px;
+    left: 500px; }
+  .footer__wrapper {
+    max-width: 690px;
+    margin: 0 auto;
+    position: relative; }
+}
