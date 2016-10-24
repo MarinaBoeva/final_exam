@@ -318,7 +318,7 @@ ul {
   .footer__link {
     margin: 0 auto; } }
 
-@media (min-width: 480px) and (max-width: 767px) {
+/*@media (min-width: 480px) and (max-width: 767px) {*/
   .mobile-wrap {
     display: block; }
   .title--black {
@@ -357,6 +357,15 @@ ul {
   .slide {
     height: 300px;
     width: 465px; }
+  .slide--1 {
+    background: url(../img/step-1ie.jpg) center no-repeat;
+    background-size: cover; }
+  .slide--4 {
+    background: url(../img/step-2ie.jpg) center no-repeat;
+    background-size: cover; }
+  .slide--6 {
+    background: url(../img/step-3ie.jpg) center no-repeat;
+    background-size: cover; }
   .face {
     margin-top: 30px;
     width: 100%; }
