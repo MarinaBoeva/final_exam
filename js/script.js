@@ -39,27 +39,18 @@
       gutter:12
     });
  }
-$(function () {
-  $('.slide__hider').jcarousel({
-    scroll:1,
-    wrap:"circular",
-    list: '.slide__container'
-  });
-  $('.slide__control--left').jcarouselControl({
-        target: '-=1'
-    });
-
-    $('.slide__control--right').jcarouselControl({
-        target: '+=1'
-    });
-  $('.ideas__button').on('click',function (event) {
-    event.preventDefault();
-    getNewQuery();
-  });
+window.onload=function () {
   var categorys=['sunset','seaside','mountain','holland','fjords','venice+canal','ireland+lake','alps+nature'];
   category=categorys[Math.floor(Math.random()*categorys.length)];
   init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=3&q='+category);
-});
+  document.querySelector('.ideas__button').onclick=function () {
+    getNewQuery();
+  }
+  var slideHider = document.querySelectorAll('.slide__hider');
+  slider(slideHider[0]);
+  slider(slideHider[1]);
+  slider(slideHider[2]);
+}
 function getNewQuery() {
   var input = document.querySelector('.ideas__input');
   var keyword =input.value;
@@ -67,4 +58,26 @@ function getNewQuery() {
     init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=2&q='+keyword);
   }
   input.value=''
+}
+function slider(slideHider) {
+  var slide = slideHider.querySelector('.slide');
+  var list = slideHider.querySelector('.slide__container');
+  var width=slide.offsetWidth;
+  var left = slideHider.querySelector('.slide__control--left');
+  var right = slideHider.querySelector('.slide__control--right');
+  for(var i=0;i<3;i++){
+    var position =0;
+    left.onclick=function () {
+      if(position<0){
+        position=position+width;
+        list.style.marginLeft =position+'px';
+      }
+    }
+    right.onclick=function () {
+      if(position>-width){
+        position=position-width;
+        list.style.marginLeft =position+'px';
+      }
+    }
+  }
 }
