@@ -187,7 +187,9 @@ ul {
   line-height: 40px;
   height: 40px;
   margin: 0 auto; }
-
+  .face__button:hover{
+    border-color: #ff6a67;
+  }
 .grid {
   position: relative; }
 
@@ -278,14 +280,7 @@ ul {
     height: 240px;
     width: 300px; }
   .slide__controls {
-    top: 5%; }
-  .slide__control {
-    width: 20px;
-    color: #c7c0b7;
-    color: transparent;
-    line-height: 100px; }
-  .slide__control--right {
-    margin-left: 190px; }
+    display: none;}
   .slide__text {
     padding-top: 50px; }
   .face {
@@ -350,10 +345,8 @@ ul {
     margin-bottom: 10px; }
   .slide__text {
     padding-top: 100px; }
-  .slide__controls {
-    top: 10%; }
-  .slide__control--right {
-    margin-left: 370px; }
+    .slide__controls {
+      display: none;}
   .slide {
     height: 300px;
     width: 465px; }
