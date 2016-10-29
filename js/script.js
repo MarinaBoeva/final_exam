@@ -42,7 +42,7 @@
 window.onload=function () {
   var categorys=['sunset','seaside','mountain','holland','fjords','venice+canal','ireland+lake','alps+nature'];
   category=categorys[Math.floor(Math.random()*categorys.length)];
-  init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=3&q='+category);
+  init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=3callback=?&q='+category);
   document.querySelector('.ideas__button').onclick=function () {
     getNewQuery();
   }
@@ -55,7 +55,7 @@ function getNewQuery() {
   var input = document.querySelector('.ideas__input');
   var keyword =input.value;
   if(keyword!=null){
-    init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=2&q='+keyword);
+    init('https://pixabay.com/api/?key=3429450-a383cae33a92ccea1a1e14e3a&&image_type=photo&pretty=true&per_page=7&min_height=300&min_width=600&orientation=horisontal&page=2callback=?&q='+keyword);
   }
   input.value=''
 }
