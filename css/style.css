@@ -252,7 +252,7 @@ ul {
   background-image: url(../img/desine.png);
   background-repeat: no-repeat; }
 
-/*@media (max-width: 479px) {*/
+@media (max-width: 479px) {
   .mobile-wrap {
     display: block; }
   .title--black {
